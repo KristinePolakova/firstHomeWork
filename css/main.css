@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #ebebd5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #1d3613;
+  color: #f5f5dc;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header img {
+  height: 100px;
+  margin: 0 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5f5dc;
+  padding: 0 15px;
+}
+
+nav a:hover {
+  background-color: #4a7b4d;
+  border-radius: 50px;
+}
+
+#introSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+
+.intro-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.services {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.services p {
+  padding-bottom: 90 px;
+}
+
+.services th {
+  font-size: 1.5em;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 30px;
+}
+
+.service-section {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.service-image {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.service-description {
+  width: 50%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+
+.left-column {
+  flex: 0.8;
+  max-width: 50%;
+  padding: 50px;
+}
+
+.right-column {
+  flex: 1;
+  max-width: 600px;
+  padding: 50px;
+}
+
+.left-column img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.right-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #1d3613;
+  color: #f5f5dc;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4a7b4d;
+}
+
+table {
+  width: 100%;
+}
+
+table img {
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+table img:hover {
+  border-radius: 200px;
+}
+
+footer {
+  background-color: #1d3613;
+  color: #f5f5dc;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: auto;
+}
