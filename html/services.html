@@ -3,149 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/main.css" />
     <title>Relax&Roll</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="logo-header">
-          <img
-            src="/res/sauna_boat_logo.png"
-            alt="Relax & Roll Logo"
-            id="logo"
-          />
-          <h1>Relax & Roll</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-header">
+            <img
+              src="/res/sauna_boat_logo.png"
+              alt="Relax & Roll Logo"
+              id="logo"
+            />
+            <h1>Relax & Roll</h1>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-      <section class="services-list">
-        <section class="service-section">
+        </div>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
           <img
-            class="service-image left-column"
+            class="service-image"
             src="/res/sauna_pic.jpeg"
             alt="Mobile Sauna"
           />
-          <div class="service-description right-column">
-            <h2>Mobile Sauna Rental</h2>
-            <p>
-              Escape into a realm of serene warmth with our Mobile Sauna Rental
-              service. Our finely crafted saunas are not just a means to unwind,
-              but a transportable luxury experience that we bring right to your
-              preferred location. Whether it's the tranquility of your garden, a
-              festive gathering, or an adventurous outdoor spot, our mobile
-              saunas are designed to suit any environment. Built from the finest
-              wood and equipped with state-of-the-art heating systems, they
-              offer the authentic Finnish sauna experience — complete with the
-              gentle hiss of steam and the inviting scent of cedar. With ample
-              space to accommodate your guests, our saunas provide a cozy
-              retreat to stimulate rejuvenation, improve circulation, and
-              release the day's stress. The sanctity of wellness and warmth is
-              just a booking away.
-            </p>
-          </div>
-        </section>
-        <section class="service-section">
+        </div>
+        <div class="col-12 col-md-6 pt-4">
+          <h2>Mobile Sauna Rental</h2>
+          <p>
+            Escape into a realm of serene warmth with our Mobile Sauna Rental
+            service. Our finely crafted saunas are not just a means to unwind,
+            but a transportable luxury experience that we bring right to your
+            preferred location. Whether it's the tranquility of your garden, a
+            festive gathering, or an adventurous outdoor spot, our mobile saunas
+            are designed to suit any environment. Built from the finest wood and
+            equipped with state-of-the-art heating systems, they offer the
+            authentic Finnish sauna experience — complete with the gentle hiss
+            of steam and the inviting scent of cedar. With ample space to
+            accommodate your guests, our saunas provide a cozy retreat to
+            stimulate rejuvenation, improve circulation, and release the day's
+            stress. The sanctity of wellness and warmth is just a booking away.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
           <img
-            class="service-image left-column"
+            class="service-image"
             src="/res/hot_tub.jpeg"
             alt="Mobile Hot Tub"
           />
-          <div class="service-description right-column">
-            <h2>Mobile Hot Tub Rental</h2>
-            <p>
-              Delve into the soothing embrace of hot, bubbling water with our
-              Mobile Hot Tub Rental service. Perfect for romantic evenings,
-              social gatherings, or a solitary soak under the stars, our hot
-              tubs are the epitome of indulgence. We deliver the hot tub to your
-              location, handling all the setup details so you can simply step in
-              and let the warm waters melt your cares away. Each tub is
-              meticulously cleaned and maintained, ensuring a hygienic and
-              blissful experience. Equipped with powerful jets and temperature
-              controls, our mobile hot tubs offer therapeutic benefits, easing
-              muscle tension and promoting relaxation. Transform any setting
-              into a spa-like oasis and bask in the luxury of a hot tub without
-              any long-term commitment.
-            </p>
-          </div>
-        </section>
-        <section class="service-section">
+        </div>
+        <div class="col-12 col-md-6 pt-4">
+          <h2>Mobile Hot Tub Rental</h2>
+          <p>
+            Delve into the soothing embrace of hot, bubbling water with our
+            Mobile Hot Tub Rental service. Perfect for romantic evenings, social
+            gatherings, or a solitary soak under the stars, our hot tubs are the
+            epitome of indulgence. We deliver the hot tub to your location,
+            handling all the setup details so you can simply step in and let the
+            warm waters melt your cares away. Each tub is meticulously cleaned
+            and maintained, ensuring a hygienic and blissful experience.
+            Equipped with powerful jets and temperature controls, our mobile hot
+            tubs offer therapeutic benefits, easing muscle tension and promoting
+            relaxation. Transform any setting into a spa-like oasis and bask in
+            the luxury of a hot tub without any long-term commitment.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
           <img
-            class="service-image left-column"
+            class="service-image"
             src="/res/kanoe_pic.png"
             alt="Canoe Boats"
           />
-          <div class="service-description right-column">
-            <h2>Canoe Boat Rental</h2>
-            <p>
-              Embark on a picturesque voyage across calm waters with our Canoe
-              Boat Rental. Our canoes are the perfect vessels for adventurers
-              and peace-seekers alike. Glide over glassy lakes, navigate gentle
-              rivers, or explore hidden streams. Our fleet is diverse, featuring
-              canoes that range from sturdy, family-friendly models to sleek,
-              lightweight designs for the more experienced paddler. Each canoe
-              is well-maintained and equipped with all the necessary gear,
-              including paddles and safety vests. We offer flexible rental
-              periods, from a few hours of peaceful paddling to multi-day
-              excursions. With our canoe rentals, the beauty of nature is at
-              your paddle's reach. Create lasting memories as you connect with
-              the environment from the unique perspective of the water's
-              surface.
-            </p>
-          </div>
-        </section>
-      </section>
-      <!-- <section>
-        <h2>Our Services</h2>
-        <table>
-          <thead>
-            <p>
-              Enjoy our mobile sauna, mobile hot tub, and canoe rental services.
-            </p>
-          </thead>
-          <th>Mobile Sauna</th>
-          <th>Mobile Hot Tub</th>
-          <th>Canoe Boats</th>
-          <tr></tr>
-          <td>
-            <img src="/res/mobile_sauna_logo.png" alt="Mobile Sauna" />
-            <p>
-              Indulge in the warmth and comfort of our Mobile Sauna, no matter
-              where you are. Our saunas are designed to provide a luxurious
-              experience, combining the coziness of traditional saunas with the
-              convenience of mobility. Perfect for gatherings, events, or a
-              personal retreat in the privacy of your own space.
-            </p>
-          </td>
-          <td>
-            <img src="/res/hot_tub_logo.png" alt="Mobile Hot Tub" />
-            <p>
-              Soak in relaxation with our Mobile Hot Tub service. Enjoy the
-              serenity of a spa-like experience delivered right to your
-              doorstep. Our hot tubs are meticulously maintained and can be set
-              up in any location, offering a slice of paradise wherever you
-              choose.
-            </p>
-          </td>
-          <td>
-            <img src="/res/kanoe_logo.png" alt="Mobile Sauna" />
-            <p>
-              Paddle through the beauty of nature with our Canoe Rental
-              services. Whether you're looking for a peaceful solo journey or a
-              fun group adventure, our canoes are the perfect way to explore
-              lakes, rivers, and streams. We offer a variety of canoes suitable
-              for paddlers of all skill levels.
-            </p>
-          </td>
-        </table>
-      </section> -->
-      <footer>&copy; 2023 Relax&Roll</footer>
-    </div>
+        </div>
+        <div class="col-12 col-md-6 pt-4">
+          <h2>Canoe Boat Rental</h2>
+          <p>
+            Embark on a picturesque voyage across calm waters with our Canoe
+            Boat Rental. Our canoes are the perfect vessels for adventurers and
+            peace-seekers alike. Glide over glassy lakes, navigate gentle
+            rivers, or explore hidden streams. Our fleet is diverse, featuring
+            canoes that range from sturdy, family-friendly models to sleek,
+            lightweight designs for the more experienced paddler. Each canoe is
+            well-maintained and equipped with all the necessary gear, including
+            paddles and safety vests. We offer flexible rental periods, from a
+            few hours of peaceful paddling to multi-day excursions. With our
+            canoe rentals, the beauty of nature is at your paddle's reach.
+            Create lasting memories as you connect with the environment from the
+            unique perspective of the water's surface.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>&copy; 2023 Relax&Roll</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

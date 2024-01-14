@@ -3,88 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/main.css" />
     <title>Relax & Roll</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="logo-header">
-          <img
-            src="/res/sauna_boat_logo.png"
-            alt="Relax & Roll Logo"
-            id="logo"
-          />
-          <h1>Relax & Roll</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="contact-content">
-        <div class="left-column">
-          <section id="about">
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-header">
             <img
-              src="/res/pic_autumn_sauna.png"
-              alt="Relax & Roll"
-              class="about-image"
+              src="/res/sauna_boat_logo.png"
+              alt="Relax & Roll Logo"
+              id="logo"
             />
-            <h2>About Us</h2>
-            <p>
-              Relax & Roll is your premier choice for experiencing relaxation in
-              nature. With our mobile saunas, hot tubs, and canoe rentals, we
-              bring the adventure directly to you, no matter where you are. Our
-              team is dedicated to providing exceptional service and
-              unforgettable experiences.
-            </p>
-            <div class="contact-info">
-              <p><strong>Phone:</strong> +371 12345678</p>
-              <p><strong>Email:</strong> info@relaxandroll.com</p>
-              <p><strong>Address:</strong> 123 Relax Street, Nature Town</p>
-            </div>
-          </section>
-        </div>
-        <div class="right-column">
-          <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" />
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" />
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  cols="50"
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <label for="rent-date">Preferred Rent Date:</label>
-                <input type="date" id="rent-date" name="rent-date" />
-              </div>
-              <div>
-                <label for="newsletter">Subscribe to newsletter:</label>
-                <input type="checkbox" id="newsletter" name="newsletter" />
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Submit" />
-              </div>
-            </form>
-          </section>
+            <h1>Relax & Roll</h1>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <footer>&copy; 2023 Relax & Roll</footer>
-    </div>
+    </nav>
+    <section class="container">
+      <div class="row pt-4">
+        <div class="col-12 col-md-6">
+          <img
+            src="/res/pic_autumn_sauna.png"
+            alt="Relax & Roll"
+            class="about-image"
+          />
+          <h2>About Us</h2>
+          <p>
+            Relax & Roll is your premier choice for experiencing relaxation in
+            nature. With our mobile saunas, hot tubs, and canoe rentals, we
+            bring the adventure directly to you, no matter where you are. Our
+            team is dedicated to providing exceptional service and unforgettable
+            experiences.
+          </p>
+          <div class="contact-info">
+            <p><strong>Phone:</strong> +371 12345678</p>
+            <p><strong>Email:</strong> info@relaxandroll.com</p>
+            <p><strong>Address:</strong> 123 Relax Street, Nature Town</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message:</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div>
+              <label for="exampleDataList" class="form-label"
+                >Choose your area:</label
+              >
+              <input
+                class="form-control"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Type to search..."
+              />
+              <datalist id="datalistOptions">
+                <option value="Kandava"></option>
+                <option value="Kuldīga"></option>
+                <option value="Tukums"></option>
+                <option value="Talsi"></option>
+                <option value="Jūrmala"></option>
+              </datalist>
+            </div>
+            <div class="form-check pt-4 pb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Subscribe to newsletter
+              </label>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>&copy; 2023 Relax & Roll</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
