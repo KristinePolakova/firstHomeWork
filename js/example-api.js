@@ -1,46 +1,42 @@
 const originalDiv = document.querySelector("#templateDiv");
 
-async function getCatStatus() {
+async function getElixirs() {
   try {
-    const statusCodes = [
-      100, 101, 102, 200, 201, 202, 400, 401, 402, 403, 404, 405, 406,
-    ];
-    const data = statusCodes.map((code) => {
-      return {
-        code: code,
-        imageUrl: `https://http.cat/${code}`,
-      };
-    });
+    //I will send a request and then parse data
+    const response = await fetch(
+      "https://wizard-world-api.herokuapp.com/Elixirs"
+    );
+
+    const data = await response.json(); //Still a promise
+
+    for (elixir of data) {
+      if (elixir.ingredients.length != 0) {
+        for (ingredients of elixir.ingredients) {
+          let fullInfo = await fetch(
+            `https://wizard-world-api.herokuapp.com/Ingredients/${ingredients.id}`
+          );
+          ingredient = await fullInfo.json();
+        }
+      }
+    }
     return data;
   } catch (e) {
     console.error(e);
   }
 }
 
-function fillCardData(card, statusCodeInfo) {
-  card.querySelector(".card-title").innerText = statusCodeInfo.code;
-  card.querySelector(".card-text").innerText = "";
-  let img = card.querySelector(".card-img");
-  img.src = statusCodeInfo.imageUrl;
-  img.alt = "HTTP status code " + statusCodeInfo.code;
+function fillCardData(card, elixir, i) {
+  card.setAttribute("id", "position-" + i);
+  card.querySelector(".card-title").innerText = elixir.name;
+  // card.querySelector(".card-subtitle").innerText = "Difficulty: " + elixir.difficulty;
+  card.querySelector(".card-text").innerText = "Effects: " + elixir.effect;
 }
-
-// function fillCardData(card, statusCodeInfo) {
-//   card.querySelector(".card-title").innerText = statusCodeInfo.code;
-//   card.querySelector(".card-text").innerText = "";
-//   let img = card.querySelector("img");
-//   if (!img) {
-//     img = document.createElement("img");
-//     card.appendChild(img);
-//   }
-//   img.src = statusCodeInfo.imageUrl;
-// }
 
 async function generateContent(div) {
   let cloned;
   let clonedCard;
   let card;
-  let data = await getCatStatus();
+  let data = await getElixirs();
 
   data.forEach(function (value, i) {
     if (i % 3 === 0) {
