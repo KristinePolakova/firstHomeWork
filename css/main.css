@@ -14,6 +14,19 @@ html {
   border-radius: 15px;
 }
 
+.cat-card:hover {
+  background-color: #4a7b4d;
+  font-size: 1.75rem;
+  color: rgb(214, 223, 214);
+  transition: font-size 0.3s, color 0.3s;
+}
+
+.card-img {
+  max-height: 400px;
+  min-height: 400px;
+  object-fit: cover;
+}
+
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
